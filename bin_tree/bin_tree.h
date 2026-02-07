@@ -11,5 +11,6 @@ Node *createNode(int data);
 void printTree(Node *root, int space);
 Node *makeBinTree(int *arr, int start, int end);
 Node *treeSearch(Node *root, int number);
+void freeTree(Node *root);
 
 #endif

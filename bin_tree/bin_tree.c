@@ -59,3 +59,12 @@ Node *treeSearch(Node *root, int number) {
     return NULL;
 }
 
+void freeTree(Node *root) {
+    if (root == NULL) {
+        return;
+    }
+    
+    freeTree(root->left);
+    freeTree(root->right);
+    free(root);
+}

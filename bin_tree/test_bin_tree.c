@@ -29,5 +29,8 @@ int main() {
     else {
         printf("Found\n");
     }
+
+    printf("Clear binary tree\n");
+    freeTree(root);
     return 0;
 }

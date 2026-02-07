@@ -225,6 +225,8 @@ void listClear(List *list) {
         free(now);
         now = tmp;
     }
+
+    list->head = NULL;
 }
 
 
